@@ -1,4 +1,4 @@
-# yacape - Yet Another Clean Architecture Python Example
+# YACAPE - Yet Another Clean Architecture Python Example
 
 ## Layers
 
