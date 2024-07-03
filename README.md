@@ -15,7 +15,14 @@ yacape - Yet Another Clean Architecture Python Example
 
 ```bash
 python -m venv venv
-. ./venv/bin/activate
+source ./venv/bin/activate
+pip install -r requirements.txt
+```
+
+## Run App
+
+```bash
+source ./venv/bin/activate
 python main.py
 ```
 
