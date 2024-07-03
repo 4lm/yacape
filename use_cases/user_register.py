@@ -1,7 +1,7 @@
 
 from dataclasses import dataclass
 from typing import Any, Dict, Protocol
-from datetime import datetime
+from datetime import datetime, timezone
 from entities.user import UserFactory
 
 @dataclass
@@ -52,7 +52,7 @@ class UserRegisterInteractor(InputBoundary):
         if not user.password_is_valid():
             return self.output_boundary.error("User password must have more than 5 characters.")
         
-        now = datetime.now()
+        now = datetime.now(timezone.utc)
         user_model = UserModel(user.name, user.password, now)
         self.user_model_gateway.save(user_model)
         

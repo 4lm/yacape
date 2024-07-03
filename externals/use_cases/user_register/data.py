@@ -1,10 +1,10 @@
-
 from datetime import datetime
-from use_cases.user_register import UserModel, UserModelGateway
 from sqlalchemy.orm import Session
 from sqlalchemy.orm import DeclarativeBase
 from sqlalchemy.orm import Mapped
 from sqlalchemy.orm import mapped_column
+
+from use_cases.user_register import UserModel, UserModelGateway
 
 
 class Base(DeclarativeBase):
